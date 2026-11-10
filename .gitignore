@@ -1,0 +1,19 @@
+# Project-specific material and binary artifacts must never be published.
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.zip
+*.7z
+*.tar
+*.gz
+*.log
+__pycache__/
+.env
+.env.*
+local-private/

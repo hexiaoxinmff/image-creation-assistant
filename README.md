@@ -1,14 +1,14 @@
 # 生图与改图助手
 
-当前版本：v0.7 通用试用版（由已测试的技能改为通用标识，通用版导入尚待测试）。适合用日常语言描述场景布置、招牌效果、宣传配图等需求，先整理提示词，经确认后调用当前会话可用的图片工具。
+当前版本：v0.9 通用试用版（由已测试的技能改为通用标识，通用版导入尚待测试）。适合用日常语言描述场景布置、招牌效果、宣传配图等需求，先整理提示词，经确认后调用当前会话可用的图片工具。
 
 ## 获取与安装
 
 1. 下载本仓库 ZIP 并解压，或由维护者提供完整仓库文件。私有仓库需先有 GitHub 访问权限。
 2. 在豆包工作电脑客户端的「插件・技能・伙伴」进入「技能」，查找本地技能的上传或导入入口，选择解压后的 `image-creation-assistant` 文件夹（文件夹中应直接有 `SKILL.md`，也有 `references` 与 `vendor`）。具体入口和可选格式以客户端为准。
-3. 安装后开启新工作任务，选择 `image-creation-assistant`，发送：“请检查当前技能版本，能否读取 `references/prompt-library.md` 和 `references/huashu-visual-adapter.md`？”预期版本 v0.7；文件可读取。如无对应入口或报错，请把界面截图和错误信息发给维护者。安装行为与跨账号可用性尚待目标账号实测。
+3. 安装后开启新工作任务，选择 `image-creation-assistant`，发送：“请检查当前技能版本，能否读取 `references/prompt-library.md`、`references/huashu-visual-adapter.md` 和 `references/spatial-composition.md`？”预期版本 v0.9；文件可读取。如无对应入口或报错，请把界面截图和错误信息发给维护者。安装行为与跨账号可用性尚待目标账号实测。
 
-不要把本页或单个 `SKILL.md` 当成完整技能包；参考文件和原项目来源也必须随文件夹一起保留。`vendor` 内是上游源码归档和许可证，仅作来源与人工查阅，不自动执行脚本或使用作者素材。
+不要把本页或单个 `SKILL.md` 当成完整技能包；参考文件和原项目来源也必须随文件夹一起保留。`vendor` 只保留上游许可证。为了避免带入真实案例，本仓库不包含上游作者素材或源码归档。
 
 ## 平时怎么用
 
@@ -25,5 +25,8 @@
 
 ## 来源
 
-包含对 [alchaincyf/huashu-slide-doubao](https://github.com/alchaincyf/huashu-slide-doubao) 的单图适配；原仓库 MIT 许可与完整源码归档保存在 `image-creation-assistant/vendor/`。技能本身不提供生图模型，图片能力取决于实际会话和账号。
+包含对 [alchaincyf/huashu-slide-doubao](https://github.com/alchaincyf/huashu-slide-doubao) 的单图适配；原仓库 MIT 许可保存在 `image-creation-assistant/vendor/`，源码参见上述上游链接。技能本身不提供生图模型，图片能力取决于实际会话和账号。
 
+## 提交到公开仓库前
+
+仅允许通用技能与完全虚构的文字示例。仓库不接收真实案例、截图、照片、聊天或任何压缩包。维护者请先阅读 `CONTRIBUTING.md`，启用本地提交检查并人工审核差异。自动检查有边界，不能代替人工判断。

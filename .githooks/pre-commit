@@ -1,0 +1,16 @@
+#!/bin/sh
+set -eu
+if [ -z "${IMAGE_GUARD_BLOCKLIST:-}" ]; then
+  IMAGE_GUARD_BLOCKLIST=$(git config --local --get imageguard.blocklist || true)
+  if [ -n "$IMAGE_GUARD_BLOCKLIST" ]; then
+    export IMAGE_GUARD_BLOCKLIST
+  fi
+fi
+if command -v python >/dev/null 2>&1; then
+  exec python tools/privacy_guard.py --staged
+elif command -v python3 >/dev/null 2>&1; then
+  exec python3 tools/privacy_guard.py --staged
+else
+  echo 'Python is required for the repository privacy check.' >&2
+  exit 1
+fi
