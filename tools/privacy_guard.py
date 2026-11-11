@@ -19,6 +19,12 @@ ALLOWED = {
     "image-creation-assistant/references/spatial-composition.md",
     "image-creation-assistant/references/备用工具与迁移.md",
     "image-creation-assistant/vendor/LICENSE-huashu-slide-doubao.txt",
+    "image-creation-assistant/scripts/discover_skills.py",
+    "image-creation-assistant/references/skill-discovery.md",
+    "image-creation-assistant/references/skill-discovery-tests.md",
+    "image-creation-assistant/vendor/vercel-find-skills/SKILL.md",
+    "image-creation-assistant/vendor/vercel-find-skills/LICENSE",
+    "image-creation-assistant/vendor/vercel-find-skills/SOURCE.md",
 }
 CHECKS = [
     ("data URI / embedded image", re.compile(r"data:image/[a-z0-9.+-]+;base64,", re.I)),
