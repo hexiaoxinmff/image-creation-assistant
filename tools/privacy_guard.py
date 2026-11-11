@@ -22,6 +22,7 @@ ALLOWED = {
     "image-creation-assistant/scripts/discover_skills.py",
     "image-creation-assistant/references/skill-discovery.md",
     "image-creation-assistant/references/skill-discovery-tests.md",
+    "image-creation-assistant/references/feedback-memory.md",
     "image-creation-assistant/vendor/vercel-find-skills/SKILL.md",
     "image-creation-assistant/vendor/vercel-find-skills/LICENSE",
     "image-creation-assistant/vendor/vercel-find-skills/SOURCE.md",
